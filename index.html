@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <!-- Navigation Menu -->
+    <nav>
+        <!-- Mobile Menu Icon -->
+        <div class="menu-toggle" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <!-- Navigation Links -->
+        <ul class="nav-links">
+            <li><a href="index.html">Nabila Portfolio</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home">
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img src="/assets/nabila.jpg" alt="Profile picture" class="about-pic" />
+            </div>
+            <div class="section__text">
+                <p class="section__text__p1">Hello, I'm</p>
+                <h1 class="title">Nabila Msiah</h1>
+                <p class="section__text__p2">Software Developer</p>
+                <div class="btn-container">
+                    <button class="btn btn-color-2" onclick="window.open('./assets/resume.pdf')">
+                        Download CV
+                    </button>
+                    <button class="btn btn-color-1" onclick="location.href='contact.html'">
+                        Contact Info
+                    </button>
+                </div>
+
+                <!-- Social Icons -->
+                <div id="socials-container">
+                    <a href="https://www.linkedin.com/in/nabilamsiah/" target="_blank" rel="noopener noreferrer">
+                        <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon" />
+                    </a>
+                    
+                    <a href="https://github.com/NabilaEln48" target="_blank" rel="noopener noreferrer">
+                        <img src="/assets/github.png" alt="My Github profile" class="icon" />
+                    </a>
+                    
+                    <img src="./assets/email.png" alt="My email" class="icon" onclick="location.href='mailto:nabilamsiah@gmail.com'" />
+                </div>
+
+                <!-- About Text -->
+                <div class="text-container">
+                    <p>
+                        Detail-oriented programmer with comprehensive training in software development, 
+                        database design, and application programming. Proficient in programming languages such as 
+                        <strong>Java, Python, C#, PHP, and SQL</strong>. Adept at collaborating in team environments 
+                        to deliver high-quality solutions and committed to continuous learning and professional growth.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>Copyright &#169; 2025 Nabila Msiah. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Nabila Msiah</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body class="contact-page">
+    <!-- Navigation Menu -->
+    <nav>
+        <!-- Mobile Menu Icon -->
+        <div class="menu-toggle" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <!-- Navigation Links -->
+        <ul class="nav-links">
+            <li><a href="index.html">Nabila Portfolio</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home">
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img src="/assets/nabila.jpg" alt="Profile picture" class="about-pic" />
+            </div>
+            <div class="section__text">
+                <p class="section__text__p1">Hello, I'm</p>
+                <h1 class="title">Nabila Msiah</h1>
+                <p class="section__text__p2">Software Developer</p>
+                <div class="btn-container">
+                    <button class="btn btn-color-1" onclick="location.href='contact.html'">
+                        Contact Info
+                    </button>
+                </div>
+
+                <!-- Social Icons -->
+                <div id="socials-container">
+                    <a href="https://www.linkedin.com/in/nabilamsiah/" target="_blank" rel="noopener noreferrer">
+                        <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon" />
+                    </a>
+                    
+                    <a href="https://github.com/NabilaEln48" target="_blank" rel="noopener noreferrer">
+                        <img src="/assets/github.png" alt="My Github profile" class="icon" />
+                    </a>
+                    
+                    <img src="./assets/email.png" alt="My email" class="icon" onclick="location.href='mailto:nabilamsiah@gmail.com'" />
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact Form Section at the Bottom -->
+    <section id="contact-form">
+        <h2 class="form-title">Send Me a Message</h2>
+        <form action="https://formspree.io/f/{your_form_id}" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+    <!-- Footer -->
+    <footer>
+        <p>Copyright &#169; 2025 Nabila Msiah. All Rights Reserved.</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>
+
